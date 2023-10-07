@@ -20,7 +20,7 @@ export default function List({ contacts }) {
                 onChange={(e) => setFilterText(e.target.value)}
             />
 
-            <ul>
+            <ul className="list">
                 {filtered.map((contact, i) => {
                     return (
                         <li key={i}>

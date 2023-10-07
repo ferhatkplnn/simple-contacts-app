@@ -42,7 +42,7 @@ export default function Form({ addContacts, contacts }) {
             </div>
 
             <div>
-                <button>Add</button>
+                <button className="btn">Add</button>
             </div>
         </form>
     );
