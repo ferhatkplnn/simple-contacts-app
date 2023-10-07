@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Form from "./Form";
 
 export default function Contacts() {
     const [contacts, setContacts] = useState([
@@ -19,6 +20,7 @@ export default function Contacts() {
     return (
         <div>
             <h1>Contacts</h1>
+            <Form addContacts={setContacts} contacts={contacts} />
         </div>
     );
 }
